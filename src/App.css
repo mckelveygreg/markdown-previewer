@@ -1,0 +1,43 @@
+
+.App {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+
+#editorContainer, #preview {
+  width: 46vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  padding: 10px;
+}
+
+#editorContainer h3, #preview h3 {
+  border-bottom: 2px solid black;
+  text-align: center;
+}
+
+#editorContainer textarea {
+  widows: 90%;
+  height: 90%;
+  
+  background-color: #eee
+}
+#preview div {
+
+  overflow: auto; 
+}
+#preview pre, #preview code {
+  background-color: #eee;
+}
+
+#preview img {
+  max-width: 400px;
+  display: block;
+  margin: 0 auto;
+}

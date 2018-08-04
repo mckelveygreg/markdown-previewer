@@ -1,13 +1,18 @@
-import React, { Component } from 'react';
+import React from "react";
+import marked from "marked";
 
-class Preview extends Component {
-    render() {
-        return (
-            <div>
-                
-            </div>
-        );
-    }
-}
+// Explained need to pass object from: https://zhenyong.github.io/react/tips/dangerously-set-inner-html.html
+const Preview = props => {
+  const rawMarkup = () => {
+    return { __html: marked(props.markdown) };
+  };
+  return (
+    <div  id="preview">
+        <h3>Markdown Preview</h3>
+        <div 
+      dangerouslySetInnerHTML={rawMarkup()} />
+    </div>
+    );
+};
 
 export default Preview;
