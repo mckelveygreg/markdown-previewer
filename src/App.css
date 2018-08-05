@@ -8,7 +8,7 @@
   justify-content: space-between;
 }
 
-#editorContainer, #preview {
+#editorContainer, #previewContainer {
   width: 46vw;
   height: 90vh;
   display: flex;
@@ -17,7 +17,7 @@
   padding: 10px;
 }
 
-#editorContainer h3, #preview h3 {
+#editorContainer h3, #previewContainer h3 {
   border-bottom: 2px solid black;
   text-align: center;
 }
@@ -28,7 +28,7 @@
   
   background-color: #eee
 }
-#preview div {
+#preview {
 
   overflow: auto; 
 }

@@ -28,9 +28,9 @@ const Preview = props => {
   };
 
   return (
-    <div id="preview">
+    <div id="previewContainer">
       <h3>Markdown Preview</h3>
-      <div dangerouslySetInnerHTML={rawMarkup()} />
+      <div id='preview' dangerouslySetInnerHTML={rawMarkup()} />
     </div>
   );
 };
