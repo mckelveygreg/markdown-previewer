@@ -31,11 +31,9 @@ class App extends Component {
 }
 
 const placeholder = `
-Markdown Title!
-============
+# Markdown Title!
 
-More details below this subheading
-----------------
+## More details below this subheading
 
 Here is a link to the **[official](https://daringfireball.net/projects/markdown/)** markdown documentation:
 https://daringfireball.net/projects/markdown/
