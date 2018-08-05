@@ -16,13 +16,16 @@ const Preview = props => {
 
   // marked settings
   marked.setOptions({
+    renderer: linkRenderer,
     breaks: true,
-    highlight: function(code) {
-      return highlighter.highlightAuto(code).value;
-    },
-    renderer: linkRenderer
-  });
 
+    // highlighter doesn't work :(
+    highlight: function (code) {
+      console.log(code);
+      return highlighter.highlightAuto(code).value;
+    }
+  });
+  console.log(marked.highlight);
   const rawMarkup = () => {
     return { __html: marked(props.markdown) };
   };
