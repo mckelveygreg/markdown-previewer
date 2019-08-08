@@ -19,6 +19,6 @@
   },
   "homepage": "https://mckelveygreg.github.io/markdown-previewer",
   "devDependencies": {
-    "gh-pages": "^2.0.1"
+    "gh-pages": "^2.1.1"
   }
 }
